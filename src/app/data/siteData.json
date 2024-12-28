@@ -9,7 +9,12 @@
     "image": "/images/ceo.jpg",
     "description": "John Doe, our visionary CEO, has 20 years of experience in designing modern furniture."
   },
-  "portfolio": [],
+  "portfolio": [
+    {
+      "category": "",
+      "images": []
+    }
+  ],
   "footer": {
     "contact": "info@furnitureco.com",
     "phone": "+1-234-567-890"

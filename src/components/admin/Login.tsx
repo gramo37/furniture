@@ -27,7 +27,7 @@ const Login = ({
     } else {
       alert("Token expired. Kindly login again.");
     }
-  }, []);
+  }, [setIsLoggedIn]);
 
   const handleLogin = () => {
     if (username !== LOGIN_USERNAME || password !== LOGIN_PASSWORD) {

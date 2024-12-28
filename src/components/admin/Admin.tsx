@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { auth } from "@/app/constants";
 import { getBase64Images } from "@/utils";
 import { Dispatch, SetStateAction, useCallback, useState } from "react";
+import Image from 'next/image';
 
 type Section = {
   category: string;
@@ -117,7 +119,7 @@ const AdminPage = ({
               <ul>
                 {section.images.map((image, imgIndex) => (
                   <li key={imgIndex}>
-                    <img
+                    <Image
                       src={image}
                       alt={`Preview ${imgIndex}`}
                       className="w-16 h-16 object-cover inline-block mr-2"

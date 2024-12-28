@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { readFileSync } from "fs";
 import path from "path";
+import Image from 'next/image';
 
 const getSiteData = () => {
   const dataPath = path.join(
@@ -28,10 +30,12 @@ export default async function Home() {
             <div className="grid grid-cols-3 gap-6 mt-6">
               {section.images.map((img: string, i: number) => (
                 <div key={i} className="rounded-lg overflow-hidden shadow-lg">
-                  <img
+                  <Image
                     src={img}
                     alt={section.category}
                     className="w-full h-56 object-cover"
+                    height={10}
+                    width={10}
                   />
                   <div className="p-4 bg-white">
                     <p className="text-lg font-semibold text-gray-700">
