@@ -1,0 +1,17 @@
+{
+  "dashboard": {
+    "title": "Furniture of the Future",
+    "image": "/images/dashboard.jpg",
+    "description": "Experience elegance, comfort, and innovation with our state-of-the-art furniture."
+  },
+  "about": {
+    "ceoName": "John Doe",
+    "image": "/images/ceo.jpg",
+    "description": "John Doe, our visionary CEO, has 20 years of experience in designing modern furniture."
+  },
+  "portfolio": [],
+  "footer": {
+    "contact": "info@furnitureco.com",
+    "phone": "+1-234-567-890"
+  }
+}
